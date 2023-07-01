@@ -10,7 +10,19 @@ from azure.identity import AzureDeveloperCliCredential
 from azure.core.credentials import AzureKeyCredential
 from azure.storage.blob import BlobServiceClient
 from azure.search.documents.indexes import SearchIndexClient
-from azure.search.documents.indexes.models import *
+from azure.search.documents.indexes.models import (
+    SearchIndexerDataContainer,
+    SearchIndexerDataSourceConnection,
+    SearchIndex,
+    SearchIndexer,
+    SimpleField,
+    SearchableField,
+    SemanticField,
+    SemanticSettings,
+    SemanticConfiguration,
+    PrioritizedFields,
+    SearchFieldDataType
+)
 from azure.search.documents import SearchClient
 from azure.ai.formrecognizer import DocumentAnalysisClient
 
